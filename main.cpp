@@ -6,35 +6,12 @@ Manager* manager;
 /*
 	Доделать:
 		Модели транспорта
-		Тип рулевого управления
 		Проверка на пустой файл
 */
 int main(int argc, char* argv[]) {
 	setlocale(LC_ALL, "ru");
 
 	manager = new Manager;
-	/*
-	Auto.open("Auto.txt");
-
-	if (!Auto.is_open()) {
-		cout << "Файл Auto.txt не открыт\n";
-		return 1;
-	}
-
-	Kvadro.open("Kvadro.txt");
-
-	if (!Kvadro.is_open()) {
-		cout << "Файл Auto.txt не открыт\n";
-		return 1;
-	}
-
-	Moto.open("Moto.txt");
-
-	if (!Moto.is_open()) {
-		cout << "Файл Auto.txt не открыт\n";
-		return 1;
-	}
-	*/
 
 	int local;
 	bool flag = true;
@@ -50,13 +27,25 @@ int main(int argc, char* argv[]) {
 		system("cls");
 		flag_new = true;
 		cout << "Выберите тип ТС, которое хотите получить:\n1. Автомобиль\n2. Квадроцикл\n3. Мотоцикл\n4. Выход из программы\n";
-		cin >> local;
+
+		while (!(cin >> local)) {
+			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cin.clear();
+			cin.ignore(32.767, '\n');
+		}
+
 		switch (local) {
 		case 1:
 			while (flag_new) {
 				system("cls");
 				cout << "Какой автомобиль вы хотите?\n1. Новый\n2. Старый\n";
-				cin >> local;
+
+				while (!(cin >> local)) {
+					cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+					cin.clear();
+					cin.ignore(32.767, '\n');
+				}
+
 				switch (local) {
 				case 1:
 					manager->create_car();
@@ -76,7 +65,13 @@ int main(int argc, char* argv[]) {
 			while (flag_new) {
 				system("cls");
 				cout << "Какой квадроцикл вы хотите?\n1. Новый\n2. Старый\n";
-				cin >> local;
+
+				while (!(cin >> local)) {
+					cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+					cin.clear();
+					cin.ignore(32.767, '\n');
+				}
+
 				switch (local) {
 				case 1:
 					manager->create_kvadro();
@@ -96,7 +91,13 @@ int main(int argc, char* argv[]) {
 			while (flag_new) {
 				system("cls");
 				cout << "Какой мотоцикл вы хотите?\n1. Новый\n2. Старый\n";
-				cin >> local;
+
+				while (!(cin >> local)) {
+					cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+					cin.clear();
+					cin.ignore(32.767, '\n');
+				}
+
 				switch (local) {
 				case 1:
 					manager->create_moto();
@@ -120,12 +121,6 @@ int main(int argc, char* argv[]) {
 			system("pause");
 		}
 	}
-
-	/*
-	Auto.close();
-	Kvadro.close();
-	Moto.close();
-	*/
 
 	delete manager;
 	return 0;

@@ -1,10 +1,6 @@
 #include "Builder.h"
 
 Builder::Builder() {
-	/*
-	cout << "Constructor Builder\n";
-	system("pause");
-	*/
 	type = new string[N];				//Тип транспорта
 	wheel = new int;					//Количество колес
 	color = new string[N];				//Цвет
@@ -22,10 +18,6 @@ Builder::Builder() {
 }
 
 Builder::~Builder() {
-
-	cout << "Destructor Builder\n";
-	system("pause");
-
 	type = nullptr;
 	wheel = nullptr;
 	color = nullptr;
@@ -142,7 +134,13 @@ void Builder::output_new(fstream& TS) {
 	cout << "\n------\nСохранить текущее ТС?\n1. Да\n2. Нет\n------\n";
 
 	while (flag) {
-		cin >> local;
+
+		while (!(cin >> local)) {
+			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cin.clear();
+			cin.ignore(32.767, '\n');
+		}
+
 		switch (local) {
 		case 1:
 			TS << *type << "\n" << *wheel << "\n" << *color << "\n" << *price << "\n" << *engine_type << "\n" << *engine_volume << "\n"
@@ -289,7 +287,13 @@ void Builder::choose_color() {
 	while (flag) {
 		system("cls");
 		cout << "Выберите цвет ТС:\n1. Red\n2. Blue\n3. Yellow\n4. Black\n5. White\n";
-		cin >> local;
+
+		while (!(cin >> local)) {
+			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cin.clear();
+			cin.ignore(32.767, '\n');
+		}
+
 		switch (local) {
 		case 1:
 			*color = "Red";
@@ -330,7 +334,13 @@ void Builder::choose_engine_type() {
 	while (flag) {
 		system("cls");
 		cout << "Выберите тип двигателя:\n1. Benz\n2. Diesel\n";
-		cin >> local;
+
+		while (!(cin >> local)) {
+			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cin.clear();
+			cin.ignore(32.767, '\n');
+		}
+
 		switch (local) {
 		case 1:
 			*engine_type = "Benz";
@@ -355,7 +365,13 @@ void Builder::choose_engine_volume() {
 	while (flag) {
 		system("cls");
 		cout << "Выберите объем двигателя:\n1. 1.3\n2. 1.6\n3. 1.8\n4. 2.0\n5. 2.4\n";
-		cin >> local;
+
+		while (!(cin >> local)) {
+			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cin.clear();
+			cin.ignore(32.767, '\n');
+		}
+
 		switch (local) {
 		case 1:
 			*engine_volume = 1.3;
@@ -399,7 +415,13 @@ void Builder::choose_mark_auto() {
 	while (flag) {
 		system("cls");
 		cout << "Выберите марку:\n1. Merc\n2. BMW\n3. Audi\n4. Mitsubishi\n5. Renault\n6. Shkoda\n";
-		cin >> local;
+
+		while (!(cin >> local)) {
+			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cin.clear();
+			cin.ignore(32.767, '\n');
+		}
+
 		switch (local) {
 		case 1:
 			*mark = "Merc";
@@ -442,7 +464,13 @@ void Builder::choose_model_auto() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -467,7 +495,13 @@ void Builder::choose_model_auto() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -492,7 +526,13 @@ void Builder::choose_model_auto() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -517,7 +557,13 @@ void Builder::choose_model_auto() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -542,7 +588,13 @@ void Builder::choose_model_auto() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -567,7 +619,13 @@ void Builder::choose_model_auto() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -600,7 +658,13 @@ void Builder::choose_mark_kvadro() {
 	while (flag) {
 		system("cls");
 		cout << "Выберите марку:\n1. MarkKvadro1\n2. MarkKvadro2\n3. MarkKvadro3\n4. MarkKvadro4\n5. MarkKvadro5\n6. MarkKvadro6\n";
-		cin >> local;
+
+		while (!(cin >> local)) {
+			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cin.clear();
+			cin.ignore(32.767, '\n');
+		}
+
 		switch (local) {
 		case 1:
 			*mark = "MarkKvadro1";
@@ -642,7 +706,13 @@ void Builder::choose_model_kvadro() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -667,7 +737,13 @@ void Builder::choose_model_kvadro() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -692,7 +768,13 @@ void Builder::choose_model_kvadro() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -717,7 +799,13 @@ void Builder::choose_model_kvadro() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -742,7 +830,13 @@ void Builder::choose_model_kvadro() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -767,7 +861,13 @@ void Builder::choose_model_kvadro() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -799,7 +899,13 @@ void Builder::choose_mark_moto() {
 	while (flag) {
 		system("cls");
 		cout << "Выберите марку:\n1. MarkMoto1\n2. MarkMoto2\n3. MarkMoto3\n4. MarkMoto4\n5. MarkMoto5\n6. MarkMoto6\n";
-		cin >> local;
+
+		while (!(cin >> local)) {
+			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cin.clear();
+			cin.ignore(32.767, '\n');
+		}
+
 		switch (local) {
 		case 1:
 			*mark = "MarkMoto1";
@@ -841,7 +947,13 @@ void Builder::choose_model_moto() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -866,7 +978,13 @@ void Builder::choose_model_moto() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -891,7 +1009,13 @@ void Builder::choose_model_moto() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -916,7 +1040,13 @@ void Builder::choose_model_moto() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -941,7 +1071,13 @@ void Builder::choose_model_moto() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -966,7 +1102,13 @@ void Builder::choose_model_moto() {
 		while (flag) {
 			system("cls");
 			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-			cin >> local;
+
+			while (!(cin >> local)) {
+				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cin.clear();
+				cin.ignore(32.767, '\n');
+			}
+
 			switch (local) {
 			case 1:
 				*model = "Модель_1";
@@ -1023,9 +1165,39 @@ void Builder::choose_min_fuel() {
 	}
 }
 
-//Недописано
 void Builder::choose_type_of_steering() {
-	*type_of_steering = "?";
+	//Выбор  рулевого управления
+	int local;
+	bool flag = true;
+
+	while (flag) {
+		system("cls");
+		cout << "Выберите тип рулевого упралвения:\n1. Реечное рулевое управление\n2. Червячное рулевое управление\n3. Винтовое рулевое управление\n";
+
+		while (!(cin >> local)) {
+			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cin.clear();
+			cin.ignore(32.767, '\n');
+		}
+
+		switch (local) {
+		case 1:
+			*type_of_steering = "Реечное(РУ)";
+			flag = false;
+			break;
+		case 2:
+			*type_of_steering = "Червячное(РУ)";
+			flag = false;
+			break;
+		case 3:
+			*type_of_steering = "Винтовое(РУ)";
+			flag = false;
+			break;
+		default:
+			cout << "Неверный ввод, повторите.\n";
+			system("pause");
+		}
+	}
 }
 
 void Builder::choose_consuptition() {
