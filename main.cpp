@@ -3,11 +3,7 @@
 using namespace std;
 
 Manager* manager;
-/*
-	Доделать:
-		Модели транспорта
-		Проверка на пустой файл
-*/
+
 int main(int argc, char* argv[]) {
 	setlocale(LC_ALL, "ru");
 

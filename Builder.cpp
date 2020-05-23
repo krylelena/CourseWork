@@ -463,7 +463,7 @@ void Builder::choose_model_auto() {
 	if (*mark == "Merc") {
 		while (flag) {
 			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
+			cout << "Выберите модель:\n1. A200\n2. GLS\n3. A180\n";
 
 			while (!(cin >> local)) {
 				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -473,15 +473,15 @@ void Builder::choose_model_auto() {
 
 			switch (local) {
 			case 1:
-				*model = "Модель_1";
+				*model = "A200";
 				flag = false;
 				break;
 			case 2:
-				*model = "Модель_2";
+				*model = "GLS";
 				flag = false;
 				break;
 			case 3:
-				*model = "Модель_3";
+				*model = "A180";
 				flag = false;
 				break;
 			default:
@@ -494,7 +494,7 @@ void Builder::choose_model_auto() {
 	else if (*mark == "BMW") {
 		while (flag) {
 			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
+			cout << "Выберите модель:\n1. X7\n2. X5\n3. i8\n";
 
 			while (!(cin >> local)) {
 				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -504,15 +504,15 @@ void Builder::choose_model_auto() {
 
 			switch (local) {
 			case 1:
-				*model = "Модель_1";
+				*model = "X7";
 				flag = false;
 				break;
 			case 2:
-				*model = "Модель_2";
+				*model = "X5";
 				flag = false;
 				break;
 			case 3:
-				*model = "Модель_3";
+				*model = "i8";
 				flag = false;
 				break;
 			default:
@@ -525,7 +525,7 @@ void Builder::choose_model_auto() {
 	else if (*mark  == "Audi") {
 		while (flag) {
 			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
+			cout << "Выберите модель:\n1. R8\n2. Q8\n3. A6\n";
 
 			while (!(cin >> local)) {
 				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -535,15 +535,15 @@ void Builder::choose_model_auto() {
 
 			switch (local) {
 			case 1:
-				*model = "Модель_1";
+				*model = "R8";
 				flag = false;
 				break;
 			case 2:
-				*model = "Модель_2";
+				*model = "Q8";
 				flag = false;
 				break;
 			case 3:
-				*model = "Модель_3";
+				*model = "A6";
 				flag = false;
 				break;
 			default:
@@ -556,7 +556,7 @@ void Builder::choose_model_auto() {
 	else if (*mark == "Mitsubishi") {
 		while (flag) {
 			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
+			cout << "Выберите модель:\n1. LancerIX\n2. LancerX\n3. Outlander\n";
 
 			while (!(cin >> local)) {
 				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -566,15 +566,15 @@ void Builder::choose_model_auto() {
 
 			switch (local) {
 			case 1:
-				*model = "Модель_1";
+				*model = "LancerIX";
 				flag = false;
 				break;
 			case 2:
-				*model = "Модель_2";
+				*model = "LancerX";
 				flag = false;
 				break;
 			case 3:
-				*model = "Модель_3";
+				*model = "Outlander";
 				flag = false;
 				break;
 			default:
@@ -587,7 +587,7 @@ void Builder::choose_model_auto() {
 	else if (*mark == "Renault") {
 		while (flag) {
 			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
+			cout << "Выберите модель:\n1. Scenic\n2. Sandero\n3. Duster\n";
 
 			while (!(cin >> local)) {
 				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -597,15 +597,15 @@ void Builder::choose_model_auto() {
 
 			switch (local) {
 			case 1:
-				*model = "Модель_1";
+				*model = "Scenic";
 				flag = false;
 				break;
 			case 2:
-				*model = "Модель_2";
+				*model = "Sandero";
 				flag = false;
 				break;
 			case 3:
-				*model = "Модель_3";
+				*model = "Duster";
 				flag = false;
 				break;
 			default:
@@ -618,7 +618,7 @@ void Builder::choose_model_auto() {
 	else if (*mark == "Shkoda") {
 		while (flag) {
 			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
+			cout << "Выберите модель:\n1. Octavia\n2. Rapid\n3. Fabia\n";
 
 			while (!(cin >> local)) {
 				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -628,15 +628,15 @@ void Builder::choose_model_auto() {
 
 			switch (local) {
 			case 1:
-				*model = "Модель_1";
+				*model = "Octavia";
 				flag = false;
 				break;
 			case 2:
-				*model = "Модель_2";
+				*model = "Rapid";
 				flag = false;
 				break;
 			case 3:
-				*model = "Модель_3";
+				*model = "Fabia";
 				flag = false;
 				break;
 			default:
@@ -657,7 +657,7 @@ void Builder::choose_mark_kvadro() {
 
 	while (flag) {
 		system("cls");
-		cout << "Выберите марку:\n1. MarkKvadro1\n2. MarkKvadro2\n3. MarkKvadro3\n4. MarkKvadro4\n5. MarkKvadro5\n6. MarkKvadro6\n";
+		cout << "Выберите марку:\n1. Honda\n2. Yamaha\n3. Suzuki\n";
 
 		while (!(cin >> local)) {
 			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -667,27 +667,15 @@ void Builder::choose_mark_kvadro() {
 
 		switch (local) {
 		case 1:
-			*mark = "MarkKvadro1";
+			*mark = "Honda";
 			flag = false;
 			break;
 		case 2:
-			*mark = "MarkKvadro2";
+			*mark = "Yamaha";
 			flag = false;
 			break;
 		case 3:
-			*mark = "MarkKvadro3";
-			flag = false;
-			break;
-		case 4:
-			*mark = "MarkKvadro4";
-			flag = false;
-			break;
-		case 5:
-			*mark = "MarkKvadro5";
-			flag = false;
-			break;
-		case 6:
-			*mark = "MarkKvadro6";
+			*mark = "Suzuki";
 			flag = false;
 			break;
 		default:
@@ -702,10 +690,10 @@ void Builder::choose_model_kvadro() {
 	int local;
 	bool flag = true;
 
-	if (*mark == "MarkKvadro1") {
+	if (*mark == "Honda") {
 		while (flag) {
 			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
+			cout << "Выберите модель:\n1. Rincon\n2. Rancher\n3. TRX350\n";
 
 			while (!(cin >> local)) {
 				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -715,15 +703,15 @@ void Builder::choose_model_kvadro() {
 
 			switch (local) {
 			case 1:
-				*model = "Модель_1";
+				*model = "Rincon";
 				flag = false;
 				break;
 			case 2:
-				*model = "Модель_2";
+				*model = "Rancher";
 				flag = false;
 				break;
 			case 3:
-				*model = "Модель_3";
+				*model = "TRX350";
 				flag = false;
 				break;
 			default:
@@ -733,10 +721,10 @@ void Builder::choose_model_kvadro() {
 		}
 	}
 
-	else if (*mark == "MarkKvadro2") {
+	else if (*mark == "Yamaha") {
 		while (flag) {
 			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
+			cout << "Выберите модель:\n1. Kodiak450\n2. Grizzly700\n3. YFZ450RSE\n";
 
 			while (!(cin >> local)) {
 				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -746,15 +734,15 @@ void Builder::choose_model_kvadro() {
 
 			switch (local) {
 			case 1:
-				*model = "Модель_1";
+				*model = "Kodiak450";
 				flag = false;
 				break;
 			case 2:
-				*model = "Модель_2";
+				*model = "Grizzly700";
 				flag = false;
 				break;
 			case 3:
-				*model = "Модель_3";
+				*model = "YFZ450RSE";
 				flag = false;
 				break;
 			default:
@@ -764,10 +752,10 @@ void Builder::choose_model_kvadro() {
 		}
 	}
 
-	else if (*mark == "MarkKvadro3") {
+	else if (*mark == "Suzuki") {
 		while (flag) {
 			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
+			cout << "Выберите модель:\n1. Kingquard750AXi\n2. KINGQUAD\n3. Ozark250\n";
 
 			while (!(cin >> local)) {
 				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -777,108 +765,15 @@ void Builder::choose_model_kvadro() {
 
 			switch (local) {
 			case 1:
-				*model = "Модель_1";
+				*model = "Kingquard750AXi";
 				flag = false;
 				break;
 			case 2:
-				*model = "Модель_2";
+				*model = "KINGQUAD";
 				flag = false;
 				break;
 			case 3:
-				*model = "Модель_3";
-				flag = false;
-				break;
-			default:
-				cout << "Неверный ввод, повторите.\n";
-				system("pause");
-			}
-		}
-	}
-
-	else if (*mark == "MarkKvadro4") {
-		while (flag) {
-			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-
-			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
-				cin.clear();
-				cin.ignore(32.767, '\n');
-			}
-
-			switch (local) {
-			case 1:
-				*model = "Модель_1";
-				flag = false;
-				break;
-			case 2:
-				*model = "Модель_2";
-				flag = false;
-				break;
-			case 3:
-				*model = "Модель_3";
-				flag = false;
-				break;
-			default:
-				cout << "Неверный ввод, повторите.\n";
-				system("pause");
-			}
-		}
-	}
-
-	else if (*mark == "MarkKvadro5") {
-		while (flag) {
-			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-
-			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
-				cin.clear();
-				cin.ignore(32.767, '\n');
-			}
-
-			switch (local) {
-			case 1:
-				*model = "Модель_1";
-				flag = false;
-				break;
-			case 2:
-				*model = "Модель_2";
-				flag = false;
-				break;
-			case 3:
-				*model = "Модель_3";
-				flag = false;
-				break;
-			default:
-				cout << "Неверный ввод, повторите.\n";
-				system("pause");
-			}
-		}
-	}
-
-	else if (*mark == "MarkKvadro6") {
-		while (flag) {
-			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-
-			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
-				cin.clear();
-				cin.ignore(32.767, '\n');
-			}
-
-			switch (local) {
-			case 1:
-				*model = "Модель_1";
-				flag = false;
-				break;
-			case 2:
-				*model = "Модель_2";
-				flag = false;
-				break;
-			case 3:
-				*model = "Модель_3";
+				*model = "Ozark250";
 				flag = false;
 				break;
 			default:
@@ -898,7 +793,7 @@ void Builder::choose_mark_moto() {
 
 	while (flag) {
 		system("cls");
-		cout << "Выберите марку:\n1. MarkMoto1\n2. MarkMoto2\n3. MarkMoto3\n4. MarkMoto4\n5. MarkMoto5\n6. MarkMoto6\n";
+		cout << "Выберите марку:\n1. Honda\n2. Yamaha\n3. Suzuki\n";
 
 		while (!(cin >> local)) {
 			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -908,27 +803,15 @@ void Builder::choose_mark_moto() {
 
 		switch (local) {
 		case 1:
-			*mark = "MarkMoto1";
+			*mark = "Honda";
 			flag = false;
 			break;
 		case 2:
-			*mark = "MarkMoto2";
+			*mark = "Yamaha";
 			flag = false;
 			break;
 		case 3:
-			*mark = "MarkMoto3";
-			flag = false;
-			break;
-		case 4:
-			*mark = "MarkMoto4";
-			flag = false;
-			break;
-		case 5:
-			*mark = "MarkMoto5";
-			flag = false;
-			break;
-		case 6:
-			*mark = "MarkMoto6";
+			*mark = "Suzuki";
 			flag = false;
 			break;
 		default:
@@ -943,10 +826,10 @@ void Builder::choose_model_moto() {
 	int local;
 	bool flag = true;
 
-	if (*mark == "MarkMoto1") {
+	if (*mark == "Honda") {
 		while (flag) {
 			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
+			cout << "Выберите модель:\n1. RC\n2. CBR\n3. CBF\n";
 
 			while (!(cin >> local)) {
 				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -956,15 +839,15 @@ void Builder::choose_model_moto() {
 
 			switch (local) {
 			case 1:
-				*model = "Модель_1";
+				*model = "RC";
 				flag = false;
 				break;
 			case 2:
-				*model = "Модель_2";
+				*model = "CBR";
 				flag = false;
 				break;
 			case 3:
-				*model = "Модель_3";
+				*model = "CBF";
 				flag = false;
 				break;
 			default:
@@ -974,10 +857,10 @@ void Builder::choose_model_moto() {
 		}
 	}
 
-	else if (*mark == "MarkMoto2") {
+	else if (*mark == "Yamaha") {
 		while (flag) {
 			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
+			cout << "Выберите модель:\n1. Fazer250\n2. FJR1300A\n3. MT-03\n";
 
 			while (!(cin >> local)) {
 				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -987,15 +870,15 @@ void Builder::choose_model_moto() {
 
 			switch (local) {
 			case 1:
-				*model = "Модель_1";
+				*model = "Fazer250";
 				flag = false;
 				break;
 			case 2:
-				*model = "Модель_2";
+				*model = "FJR1300A";
 				flag = false;
 				break;
 			case 3:
-				*model = "Модель_3";
+				*model = "MT-03";
 				flag = false;
 				break;
 			default:
@@ -1005,10 +888,10 @@ void Builder::choose_model_moto() {
 		}
 	}
 
-	else if (*mark == "MarkMoto3") {
+	else if (*mark == "Suzuki") {
 		while (flag) {
 			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
+			cout << "Выберите модель:\n1. GSX-S1000FA\n2. GSX-S750A\n3. GSX-S750ZA\n";
 
 			while (!(cin >> local)) {
 				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
@@ -1018,108 +901,15 @@ void Builder::choose_model_moto() {
 
 			switch (local) {
 			case 1:
-				*model = "Модель_1";
+				*model = "GSX-S1000FA";
 				flag = false;
 				break;
 			case 2:
-				*model = "Модель_2";
+				*model = "GSX-S750A";
 				flag = false;
 				break;
 			case 3:
-				*model = "Модель_3";
-				flag = false;
-				break;
-			default:
-				cout << "Неверный ввод, повторите.\n";
-				system("pause");
-			}
-		}
-	}
-
-	else if (*mark == "MarkMoto4") {
-		while (flag) {
-			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-
-			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
-				cin.clear();
-				cin.ignore(32.767, '\n');
-			}
-
-			switch (local) {
-			case 1:
-				*model = "Модель_1";
-				flag = false;
-				break;
-			case 2:
-				*model = "Модель_2";
-				flag = false;
-				break;
-			case 3:
-				*model = "Модель_3";
-				flag = false;
-				break;
-			default:
-				cout << "Неверный ввод, повторите.\n";
-				system("pause");
-			}
-		}
-	}
-
-	else if (*mark == "MarkMoto5") {
-		while (flag) {
-			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-
-			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
-				cin.clear();
-				cin.ignore(32.767, '\n');
-			}
-
-			switch (local) {
-			case 1:
-				*model = "Модель_1";
-				flag = false;
-				break;
-			case 2:
-				*model = "Модель_2";
-				flag = false;
-				break;
-			case 3:
-				*model = "Модель_3";
-				flag = false;
-				break;
-			default:
-				cout << "Неверный ввод, повторите.\n";
-				system("pause");
-			}
-		}
-	}
-
-	else if (*mark == "MarkMoto6") {
-		while (flag) {
-			system("cls");
-			cout << "Выберите модель:\n1. Модель_1\n2. Модель_2\n3. Модель_3\n";
-
-			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
-				cin.clear();
-				cin.ignore(32.767, '\n');
-			}
-
-			switch (local) {
-			case 1:
-				*model = "Модель_1";
-				flag = false;
-				break;
-			case 2:
-				*model = "Модель_2";
-				flag = false;
-				break;
-			case 3:
-				*model = "Модель_3";
+				*model = "GSX-S750ZA";
 				flag = false;
 				break;
 			default:
