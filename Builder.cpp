@@ -136,7 +136,7 @@ void Builder::output_new(fstream& TS) {
 	while (flag) {
 
 		while (!(cin >> local)) {
-			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cout << "Неверный ввод, повторите.\n";
 			cin.clear();
 			cin.ignore(32.767, '\n');
 		}
@@ -289,7 +289,7 @@ void Builder::choose_color() {
 		cout << "Выберите цвет ТС:\n1. Red\n2. Blue\n3. Yellow\n4. Black\n5. White\n";
 
 		while (!(cin >> local)) {
-			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cout << "Неверный ввод, повторите.\n";
 			cin.clear();
 			cin.ignore(32.767, '\n');
 		}
@@ -336,7 +336,7 @@ void Builder::choose_engine_type() {
 		cout << "Выберите тип двигателя:\n1. Benz\n2. Diesel\n";
 
 		while (!(cin >> local)) {
-			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cout << "Неверный ввод, повторите.\n";
 			cin.clear();
 			cin.ignore(32.767, '\n');
 		}
@@ -367,7 +367,7 @@ void Builder::choose_engine_volume() {
 		cout << "Выберите объем двигателя:\n1. 1.3\n2. 1.6\n3. 1.8\n4. 2.0\n5. 2.4\n";
 
 		while (!(cin >> local)) {
-			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cout << "Неверный ввод, повторите.\n";
 			cin.clear();
 			cin.ignore(32.767, '\n');
 		}
@@ -417,7 +417,7 @@ void Builder::choose_mark_auto() {
 		cout << "Выберите марку:\n1. Merc\n2. BMW\n3. Audi\n4. Mitsubishi\n5. Renault\n6. Shkoda\n";
 
 		while (!(cin >> local)) {
-			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cout << "Неверный ввод, повторите.\n";
 			cin.clear();
 			cin.ignore(32.767, '\n');
 		}
@@ -466,7 +466,7 @@ void Builder::choose_model_auto() {
 			cout << "Выберите модель:\n1. A200\n2. GLS\n3. A180\n";
 
 			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cout << "Неверный ввод, повторите.\n";
 				cin.clear();
 				cin.ignore(32.767, '\n');
 			}
@@ -497,7 +497,7 @@ void Builder::choose_model_auto() {
 			cout << "Выберите модель:\n1. X7\n2. X5\n3. i8\n";
 
 			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cout << "Неверный ввод, повторите.\n";
 				cin.clear();
 				cin.ignore(32.767, '\n');
 			}
@@ -528,7 +528,7 @@ void Builder::choose_model_auto() {
 			cout << "Выберите модель:\n1. R8\n2. Q8\n3. A6\n";
 
 			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cout << "Неверный ввод, повторите.\n";
 				cin.clear();
 				cin.ignore(32.767, '\n');
 			}
@@ -559,7 +559,7 @@ void Builder::choose_model_auto() {
 			cout << "Выберите модель:\n1. LancerIX\n2. LancerX\n3. Outlander\n";
 
 			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cout << "Неверный ввод, повторите.\n";
 				cin.clear();
 				cin.ignore(32.767, '\n');
 			}
@@ -590,7 +590,7 @@ void Builder::choose_model_auto() {
 			cout << "Выберите модель:\n1. Scenic\n2. Sandero\n3. Duster\n";
 
 			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cout << "Неверный ввод, повторите.\n";
 				cin.clear();
 				cin.ignore(32.767, '\n');
 			}
@@ -621,7 +621,7 @@ void Builder::choose_model_auto() {
 			cout << "Выберите модель:\n1. Octavia\n2. Rapid\n3. Fabia\n";
 
 			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cout << "Неверный ввод, повторите.\n";
 				cin.clear();
 				cin.ignore(32.767, '\n');
 			}
@@ -660,7 +660,7 @@ void Builder::choose_mark_kvadro() {
 		cout << "Выберите марку:\n1. Honda\n2. Yamaha\n3. Suzuki\n";
 
 		while (!(cin >> local)) {
-			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cout << "Неверный ввод, повторите.\n";
 			cin.clear();
 			cin.ignore(32.767, '\n');
 		}
@@ -696,7 +696,7 @@ void Builder::choose_model_kvadro() {
 			cout << "Выберите модель:\n1. Rincon\n2. Rancher\n3. TRX350\n";
 
 			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cout << "Неверный ввод, повторите.\n";
 				cin.clear();
 				cin.ignore(32.767, '\n');
 			}
@@ -727,7 +727,7 @@ void Builder::choose_model_kvadro() {
 			cout << "Выберите модель:\n1. Kodiak450\n2. Grizzly700\n3. YFZ450RSE\n";
 
 			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cout << "Неверный ввод, повторите.!!!\n";
 				cin.clear();
 				cin.ignore(32.767, '\n');
 			}
@@ -758,7 +758,7 @@ void Builder::choose_model_kvadro() {
 			cout << "Выберите модель:\n1. Kingquard750AXi\n2. KINGQUAD\n3. Ozark250\n";
 
 			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cout << "Неверный ввод, повторите.!!!\n";
 				cin.clear();
 				cin.ignore(32.767, '\n');
 			}
@@ -796,7 +796,7 @@ void Builder::choose_mark_moto() {
 		cout << "Выберите марку:\n1. Honda\n2. Yamaha\n3. Suzuki\n";
 
 		while (!(cin >> local)) {
-			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cout << "Неверный ввод, повторите.!!!\n";
 			cin.clear();
 			cin.ignore(32.767, '\n');
 		}
@@ -832,7 +832,7 @@ void Builder::choose_model_moto() {
 			cout << "Выберите модель:\n1. RC\n2. CBR\n3. CBF\n";
 
 			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cout << "Неверный ввод, повторите.\n";
 				cin.clear();
 				cin.ignore(32.767, '\n');
 			}
@@ -863,7 +863,7 @@ void Builder::choose_model_moto() {
 			cout << "Выберите модель:\n1. Fazer250\n2. FJR1300A\n3. MT-03\n";
 
 			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cout << "Неверный ввод, повторите.\n";
 				cin.clear();
 				cin.ignore(32.767, '\n');
 			}
@@ -894,7 +894,7 @@ void Builder::choose_model_moto() {
 			cout << "Выберите модель:\n1. GSX-S1000FA\n2. GSX-S750A\n3. GSX-S750ZA\n";
 
 			while (!(cin >> local)) {
-				cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+				cout << "Неверный ввод, повторите.\n";
 				cin.clear();
 				cin.ignore(32.767, '\n');
 			}
@@ -965,7 +965,7 @@ void Builder::choose_type_of_steering() {
 		cout << "Выберите тип рулевого упралвения:\n1. Реечное рулевое управление\n2. Червячное рулевое управление\n3. Винтовое рулевое управление\n";
 
 		while (!(cin >> local)) {
-			cout << "Вы ввели некорректное число...Повторите ввод снова!!!\n";
+			cout << "Неверный ввод, повторите.\n";
 			cin.clear();
 			cin.ignore(32.767, '\n');
 		}
